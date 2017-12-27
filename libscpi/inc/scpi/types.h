@@ -51,10 +51,6 @@
 extern "C" {
 #endif
 
-#if !HAVE_STDBOOL
-    typedef unsigned char bool;
-#endif
-
 #ifndef FALSE
 #define FALSE 0
 #endif
