@@ -224,7 +224,7 @@ const char * SCPI_ErrorTranslate(int16_t err) {
 #endif
 #undef X
 #undef XE
-        default: return "Unknown error";
+        default: return "User error";
     }
 }
 

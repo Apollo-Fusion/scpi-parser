@@ -43,9 +43,12 @@ extern "C" {
 
 #include "cc.h"
 
-#ifdef SCPI_USER_CONFIG
+/**
+ * In the original, this #include was protected by #ifdef SCPI_USER_CONFIG,
+ * but we have some challenges in getting that flag passed in, so we removed
+ * that guard since we always want to include the user configuration file.
+ */
 #include "scpi_user_config.h"
-#endif
 
 /* set the termination character(s)   */
 #define LINE_ENDING_CR          "\r"    /*   use a <CR> carriage return as termination charcter */
